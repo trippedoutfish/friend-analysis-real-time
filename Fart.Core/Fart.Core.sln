@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28902.138
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fart.Common", "Fart.Common", "{8BCDFB8A-8882-437F-BBDD-D002D4FFCE25}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Fart.Common", "01. Fart.Common", "{8BCDFB8A-8882-437F-BBDD-D002D4FFCE25}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fart.Web", "Fart.Web", "{A92CE7F4-CAC8-40A2-91E8-F339F17E9302}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11. Fart.Web", "11. Fart.Web", "{A92CE7F4-CAC8-40A2-91E8-F339F17E9302}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fart.Desktop", "Fart.Desktop", "{5FF1C662-DD70-4361-AB75-832A8A0FE76F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12. Fart.Desktop", "12. Fart.Desktop", "{5FF1C662-DD70-4361-AB75-832A8A0FE76F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fart.Backside", "Fart.Backside", "{CA831F2D-B56F-4533-9F70-8519618016CF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "21. Fart.Backside", "21. Fart.Backside", "{CA831F2D-B56F-4533-9F70-8519618016CF}"
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
