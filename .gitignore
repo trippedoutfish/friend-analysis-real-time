@@ -6,3 +6,8 @@
 /.vs
 /Fart.Core/.vs/Fart.Core/v16
 /Fart.Core/Fart.Common/obj
+/Fart.Core/Fart.Common/bin/Debug/netcoreapp3.0
+/Fart.Core/.vs/Fart.Core/DesignTimeBuild
+/Fart.Core/Fart.Web/obj
+/Fart.Core/Fart.Web/bin/Debug/netstandard2.0
+/Fart.Core/.vs/Fart.Core/config
