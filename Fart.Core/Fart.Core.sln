@@ -11,9 +11,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12. Fart.Desktop", "12. Far
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "21. Fart.Backside", "21. Fart.Backside", "{CA831F2D-B56F-4533-9F70-8519618016CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fart.Common", "Fart.Common\Fart.Common.csproj", "{303B7C7B-A12A-43CD-BA98-9DC4C8449231}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{303B7C7B-A12A-43CD-BA98-9DC4C8449231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303B7C7B-A12A-43CD-BA98-9DC4C8449231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303B7C7B-A12A-43CD-BA98-9DC4C8449231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303B7C7B-A12A-43CD-BA98-9DC4C8449231}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{303B7C7B-A12A-43CD-BA98-9DC4C8449231} = {8BCDFB8A-8882-437F-BBDD-D002D4FFCE25}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {298D46C0-8707-43FA-ACE9-D22CA2A44FE1}
