@@ -1,0 +1,95 @@
+﻿@page "/fetchcharacters"
+@inject HttpClient Http
+
+<h1>Character Chart</h1>
+
+<p>This component demonstrates fetching characters from the server.</p>
+
+@if (characters == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Race</th>
+                <th>Class</th>
+                <th>Level</th>
+                <th>Experience</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var character in characters)
+            {
+                <tr>
+                    <td>@character.Name</td>
+                    <td>@character.Race</td>
+                    <td>@character.Class</td>
+                    <td>@character.Level</td>
+                    <td>@character.Experience</td>
+                    <td>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Zone</th>
+                                    <th>X-Coords</th>
+                                    <th>Y-Coords</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var location in character.Locations)
+                                {
+                                    <tr>
+                                        <td>@location.Zone</td>
+                                        <td>@location.X</td>
+                                        <td>@location.Y</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@functions {
+    PlayerCharacter[] characters;
+
+    protected override async Task OnInitAsync()
+    {
+        characters = await Http.GetJsonAsync<PlayerCharacter[]>("sample-data/mockCharacters.json");
+    }
+
+    class PlayerCharacter
+    {
+
+        public string Name { get; set; }
+
+        public string Race { get; set; }
+
+        public string Class { get; set; }
+
+        public int Level { get; set; }
+
+        public int Experience { get; set; }
+
+        public LocationData[] Locations { get; set; }
+
+    }
+
+    public class LocationData
+    {
+        public string Zone { get; private set; }
+
+        public int X { get; private set; }
+
+        public int Y { get; private set; }
+    }
+
+
+}
