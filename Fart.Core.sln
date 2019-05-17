@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12. Fart.Desktop", "12. Far
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "21. Fart.Backside", "21. Fart.Backside", "{CA831F2D-B56F-4533-9F70-8519618016CF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fart.Common", "Fart.Common\Fart.Common.csproj", "{303B7C7B-A12A-43CD-BA98-9DC4C8449231}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fart.Common", "src\Fart.Core\Fart.Common\Fart.Common.csproj", "{303B7C7B-A12A-43CD-BA98-9DC4C8449231}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fart.Web", "Fart.Web\Fart.Web.csproj", "{92E468E6-FF50-4D31-BCC4-371D850D0892}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fart.Web", "src\Fart.Core\Fart.Web\Fart.Web.csproj", "{92E468E6-FF50-4D31-BCC4-371D850D0892}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fart.Desktop", "Fart.Desktop\Fart.Desktop.csproj", "{2D560065-47DF-4D04-B9C5-DDBCB3CD80A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fart.Desktop", "src\Fart.Core\Fart.Desktop\Fart.Desktop.csproj", "{2D560065-47DF-4D04-B9C5-DDBCB3CD80A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
