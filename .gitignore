@@ -22,3 +22,10 @@
 /src/Fart.Core/Fart.Desktop/bin
 /src/Fart.Core/Fart.Web/bin/x64/Release/netstandard2.0
 /src/Fart.Core/Fart.Web/Properties/PublishProfiles
+/Fart.Web.Client/bin/Release/netstandard2.0
+/Fart.Web.Client/obj
+/Fart.Web.Server/bin/Release/netcoreapp3.0
+/Fart.Web.Server/obj
+*.user
+/Fart.Web.Shared/bin/Release/netstandard2.0
+/Fart.Web.Shared/obj
