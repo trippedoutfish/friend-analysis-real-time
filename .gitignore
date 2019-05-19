@@ -29,3 +29,4 @@
 *.user
 /Fart.Web.Shared/bin/Release/netstandard2.0
 /Fart.Web.Shared/obj
+/src/Fart.Core/Fart.Web/bin/Release/netcoreapp3.0
