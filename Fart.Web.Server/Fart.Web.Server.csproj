@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Fart.Web.Client\Fart.Web.Client.csproj" />
     <ProjectReference Include="..\Fart.Web.Shared\Fart.Web.Shared.csproj" />
   </ItemGroup>
 
