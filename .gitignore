@@ -18,3 +18,7 @@
 /src/Fart.Core/Fart.Common/obj
 /src/Fart.Core/Fart.Desktop/obj
 /src/Fart.Core/Fart.Web/obj
+/src/Fart.Core/Fart.Common/bin
+/src/Fart.Core/Fart.Desktop/bin
+/src/Fart.Core/Fart.Web/bin/x64/Release/netstandard2.0
+/src/Fart.Core/Fart.Web/Properties/PublishProfiles
