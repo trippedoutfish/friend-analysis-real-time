@@ -35,3 +35,4 @@
 /src/Fart.Core/Fart.Web/bin/Debug/netcoreapp3.0
 /Fart.Discord.Bot/bin/Debug/netcoreapp3.0
 /Fart.Discord.Bot/obj
+/Fart.Discord.Bot/Properties/launchSettings.json
