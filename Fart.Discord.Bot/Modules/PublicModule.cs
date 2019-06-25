@@ -11,6 +11,7 @@ namespace Fart.Discord.Bot.Modules
     {
         // Dependency Injection will fill this value in for us
         public PictureService PictureService { get; set; }
+        public XkcdService XkcdService { get; set; }
 
         [Command("ping")]
         [Alias("pong", "hello")]
@@ -27,6 +28,16 @@ namespace Fart.Discord.Bot.Modules
             await Context.Channel.SendFileAsync(stream, "cat.png");
         }
 
+        [Command("xkcd")]
+        public async Task XkcdAsync()
+        {
+            // Get a stream containing an image of a cat
+            var stream = await XkcdService.GetXkcdComicAsync();
+            // Streams must be seeked to their beginning before being uploaded!
+            stream.Seek(0, SeekOrigin.Begin);
+            await Context.Channel.SendFileAsync(stream, "xkcd.png");
+        }
+
         // Get info on a user, or the user who invoked the command if one is not specified
         [Command("userinfo")]
         public async Task UserInfoAsync(IUser user = null)
@@ -36,18 +47,26 @@ namespace Fart.Discord.Bot.Modules
             await ReplyAsync(user.ToString());
         }
 
-        // Ban a user
-        [Command("ban")]
-        [RequireContext(ContextType.Guild)]
-        // make sure the user invoking the command can ban
-        [RequireUserPermission(GuildPermission.BanMembers)]
-        // make sure the bot itself can ban
-        [RequireBotPermission(GuildPermission.BanMembers)]
-        public async Task BanUserAsync(IGuildUser user, [Remainder] string reason = null)
+        [Command("commands")]
+        public async Task CommandsAsync()
         {
-            await user.Guild.AddBanAsync(user, reason: reason);
-            await ReplyAsync("ok!");
+            string[] commands = { "ping - try me", "cat - picture of a car", "xkcd - todays xkcd", "userinfo <username> -  returns info on user", "echo <someText> - EchoooO", "list <word1> <word2> - type words with spaces between 'em" };
+
+            await ReplyAsync(string.Join('\n', commands));
         }
+
+        //// Ban a user
+        //[Command("ban")]
+        //[RequireContext(ContextType.Guild)]
+        //// make sure the user invoking the command can ban
+        //[RequireUserPermission(GuildPermission.BanMembers)]
+        //// make sure the bot itself can ban
+        //[RequireBotPermission(GuildPermission.BanMembers)]
+        //public async Task BanUserAsync(IGuildUser user, [Remainder] string reason = null)
+        //{
+        //    await user.Guild.AddBanAsync(user, reason: reason);
+        //    await ReplyAsync("ok!");
+        //}
 
         // [Remainder] takes the rest of the command's arguments as one argument, rather than splitting every space
         [Command("echo")]
@@ -60,10 +79,12 @@ namespace Fart.Discord.Bot.Modules
         public Task ListAsync(params string[] objects)
             => ReplyAsync("You listed: " + string.Join("; ", objects));
 
-        // Setting a custom ErrorMessage property will help clarify the precondition error
-        [Command("guild_only")]
-        [RequireContext(ContextType.Guild, ErrorMessage = "Sorry, this command must be ran from within a server, not a DM!")]
-        public Task GuildOnlyCommand()
-            => ReplyAsync("Nothing to see here!");
+        //// Setting a custom ErrorMessage property will help clarify the precondition error
+        //[Command("guild_only")]
+        //[RequireContext(ContextType.Guild, ErrorMessage = "Sorry, this command must be ran from within a server, not a DM!")]
+        //public Task GuildOnlyCommand()
+        //    => ReplyAsync("Nothing to see here!");
+
+
     }
 }
