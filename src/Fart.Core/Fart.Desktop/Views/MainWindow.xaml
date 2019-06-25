@@ -1,0 +1,36 @@
+﻿<Window x:Class="Fart.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fart.Desktop"
+        xmlns:localVMs="clr-namespace:Fart.Desktop.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="1600">
+    <Window.InputBindings>
+        <!-- Example of Keyboard shortcuts -->
+        <KeyBinding Command="{Binding SaveCmd}" Key="S" Modifiers="Ctrl" />
+        <KeyBinding Command="{Binding SaveAsCmd}" Gesture="Ctrl+Shift+S" />
+        <KeyBinding Command="{Binding OpenCmd}" Gesture="Ctrl+O" />
+        <KeyBinding Command="{Binding NewCmd}" Gesture="Ctrl+N" />
+        <KeyBinding Command="{Binding ExitCmd}" Gesture="Alt+F4" />
+    </Window.InputBindings>
+
+    <DockPanel>
+        <!-- File Menu -->
+        <Menu DockPanel.Dock="Top" Margin="0,0,0.4,0">
+            <MenuItem Header="File">
+                <MenuItem Header="New" Command="{Binding NewCmd}" InputGestureText="Ctrl+N" />
+                <MenuItem Header="Open" Command="{Binding OpenCmd}" InputGestureText="Ctrl+O" />
+                <MenuItem Header="Save" Command="{Binding SaveCmd}" InputGestureText="Ctrl+S" />
+                <MenuItem Header="Save As" Command="{Binding SaveAsCmd}" InputGestureText="Ctrl+Shift+S"/>
+                <Separator />
+                <MenuItem Header="Exit" Command="{Binding ExitCmd}" InputGestureText="Alt+F4"/>
+            </MenuItem>
+        </Menu>
+
+        <StackPanel>
+            <!-- Place here your content -->
+        </StackPanel>
+    </DockPanel>
+</Window>

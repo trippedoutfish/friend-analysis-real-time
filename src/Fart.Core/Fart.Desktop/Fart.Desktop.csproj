@@ -8,15 +8,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\About.xaml" />
+    <None Remove="Views\MapDisplay.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ApplicationDefinition Update="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>
