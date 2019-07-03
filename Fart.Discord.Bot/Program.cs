@@ -65,6 +65,8 @@ namespace Fart.Discord.Bot
                 .AddSingleton<HttpClient>()
                 .AddSingleton<PictureService>()
                 .AddSingleton<XkcdService>()
+                .AddSingleton<FartHookService>()
+                .AddSingleton<JokeService>()
                 .BuildServiceProvider();
         }
     }

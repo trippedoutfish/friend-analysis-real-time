@@ -1,5 +1,7 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Threading.Tasks;
+using System.Web;
 using Discord;
 using Discord.Commands;
 using Fart.Discord.Bot.Services;
@@ -12,6 +14,10 @@ namespace Fart.Discord.Bot.Modules
         // Dependency Injection will fill this value in for us
         public PictureService PictureService { get; set; }
         public XkcdService XkcdService { get; set; }
+        public FartHookService FartHookService { get; set; }
+        public JokeService JokeService { get; set; }
+
+        private Random randomGenerator = new Random();
 
         [Command("ping")]
         [Alias("pong", "hello")]
@@ -85,6 +91,22 @@ namespace Fart.Discord.Bot.Modules
         //public Task GuildOnlyCommand()
         //    => ReplyAsync("Nothing to see here!");
 
+        [Command("webhook")]
+        public async Task WebHookAsync(string Title = "Default Title", string Description = "Default Description")
+        {
+            await FartHookService.PostWebhook(Title, Description);
+        }
 
+        [Command("joke")]
+        public async Task JokeTaskAsync([Remainder] string text)
+        {
+            var punchLine = await JokeService.GetJokeAsync(text);
+            Console.WriteLine(punchLine);
+            punchLine = punchLine.Replace("<br />", "");
+            var periodIndex = punchLine.IndexOf('.') > 0 ? punchLine.IndexOf('.') : punchLine.Substring(50).IndexOf(' ');
+            var sampleIndex = punchLine.LastIndexOf('=', 150);
+            var trimmedJoke = punchLine.Substring(sampleIndex, periodIndex);
+            await ReplyAsync(trimmedJoke);
+        }
     }
 }
