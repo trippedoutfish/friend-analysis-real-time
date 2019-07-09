@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fart.Desktop", "src\Fart.Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fart.Web", "src\Fart.Core\Fart.Web\Fart.Web.csproj", "{24B5E51C-7E9A-4A3C-B4BB-62173A436A54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fart.DocumentParser", "src\Fart.Core\Fart.DocumentParser\Fart.DocumentParser.csproj", "{8D8A8338-B828-436B-AB06-8F269CE620CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fart.DocumentParser", "src\Fart.Core\Fart.DocumentParser\Fart.DocumentParser.csproj", "{8D8A8338-B828-436B-AB06-8F269CE620CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "21. Fart.Discord", "21. Fart.Discord", "{31296700-9C0B-4F5A-8C93-068C9B3945AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fart.Discord.Bot", "src\Fart.Core\Fart.Discord.Bot\Fart.Discord.Bot.csproj", "{E146A4C2-DA1A-4109-98A8-DC771EA6477A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +81,18 @@ Global
 		{8D8A8338-B828-436B-AB06-8F269CE620CF}.Release|x64.Build.0 = Release|Any CPU
 		{8D8A8338-B828-436B-AB06-8F269CE620CF}.Release|x86.ActiveCfg = Release|Any CPU
 		{8D8A8338-B828-436B-AB06-8F269CE620CF}.Release|x86.Build.0 = Release|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Debug|x64.Build.0 = Debug|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Debug|x86.Build.0 = Debug|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Release|x64.ActiveCfg = Release|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Release|x64.Build.0 = Release|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Release|x86.ActiveCfg = Release|Any CPU
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +102,7 @@ Global
 		{2D560065-47DF-4D04-B9C5-DDBCB3CD80A5} = {5FF1C662-DD70-4361-AB75-832A8A0FE76F}
 		{24B5E51C-7E9A-4A3C-B4BB-62173A436A54} = {A92CE7F4-CAC8-40A2-91E8-F339F17E9302}
 		{8D8A8338-B828-436B-AB06-8F269CE620CF} = {5FF1C662-DD70-4361-AB75-832A8A0FE76F}
+		{E146A4C2-DA1A-4109-98A8-DC771EA6477A} = {31296700-9C0B-4F5A-8C93-068C9B3945AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {298D46C0-8707-43FA-ACE9-D22CA2A44FE1}

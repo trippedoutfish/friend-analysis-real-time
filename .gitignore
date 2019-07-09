@@ -33,7 +33,12 @@
 /Fart.DocumentParser/bin/Debug/netcoreapp3.0
 /Fart.DocumentParser/obj
 /src/Fart.Core/Fart.Web/bin/Debug/netcoreapp3.0
+/Fart.Discord.Bot/bin/Debug/netcoreapp3.0
+/Fart.Discord.Bot/obj
+/Fart.Discord.Bot/Properties/launchSettings.json
 /src/Fart.Core/Fart.DocumentParser/bin/Debug/netcoreapp3.0
 /src/Fart.Core/Fart.DocumentParser/obj
 /Fart.Discord.Bot/obj/Debug/netcoreapp3.0
 /Fart.Discord.Bot/obj/Release/netcoreapp3.0
+/src/Fart.Core/Fart.Discord.Bot/obj
+/src/Fart.Core/Fart.Discord.Bot/bin/Debug/netcoreapp3.0
