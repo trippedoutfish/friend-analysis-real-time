@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CsvHelper;
+using Newtonsoft.Json;
 using NLua;
 using System;
 using System.Collections;
@@ -42,6 +43,19 @@ namespace Fart.DocumentParser
                     CharacterLog temp = new CharacterLog(a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
                     logs.Add(temp);
                 }
+            }
+
+            var csv = new CsvReader(new StreamReader("uimap-8.2.0.30993.csv"));
+            var records = csv.GetRecords<UiMap>().ToList();
+
+            Dictionary<int, int> mapCount = new Dictionary<int, int>();
+
+            var grouped = logs.GroupBy(x => x.MapId).OrderByDescending(group => group.Count()).ToDictionary(group => records.First(x => x.ID == group.Key.ToString()).Name_lang + " - " + group.Key.ToString(), group => group.Count());
+
+
+            foreach (var group in grouped)
+            {
+                Console.WriteLine($"{group.Key} was present for {group.Value} entries.");
             }
 
             int totalLogTime = logs.Max(x => x.EpochTime) - logs.Min(x => x.EpochTime);

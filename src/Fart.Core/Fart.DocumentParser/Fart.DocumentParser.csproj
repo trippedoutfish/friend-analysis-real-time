@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,15 +7,24 @@
 
   <ItemGroup>
     <None Remove="fartAddon.lua" />
+    <None Remove="map.csv" />
+    <None Remove="uimap-8.2.0.30993.csv" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="fartAddon.lua">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="map.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="uimap-8.2.0.30993.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="12.1.2" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="NLua" Version="1.5.0-v150lua54-build4" />
   </ItemGroup>
