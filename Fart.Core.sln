@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fart.Desktop", "src\Fart.Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fart.Web", "src\Fart.Core\Fart.Web\Fart.Web.csproj", "{24B5E51C-7E9A-4A3C-B4BB-62173A436A54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fart.DocumentParser", "Fart.DocumentParser\Fart.DocumentParser.csproj", "{8D8A8338-B828-436B-AB06-8F269CE620CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fart.DocumentParser", "src\Fart.Core\Fart.DocumentParser\Fart.DocumentParser.csproj", "{8D8A8338-B828-436B-AB06-8F269CE620CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
