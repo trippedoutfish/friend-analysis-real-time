@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Shalafein",
+    "race": "Undead",
+    "class": "Priest",
+    "level": 10,
+    "experience": 0,
+    "locations": [
+      {
+        "zone": "Tirisfal Glades",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "zone": "Undercity",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "zone": "Silverpine Forest",
+        "x": 1,
+        "y": 1
+      }
+    ]
+  },
+  {
+    "name": "Sangaro",
+    "race": "Undead",
+    "class": "Mage",
+    "level": 10,
+    "experience": 0,
+    "locations": [
+      {
+        "zone": "Tirisfal Glades",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "zone": "Undercity",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "zone": "Silverpine Forest",
+        "x": 1,
+        "y": 1
+      }
+    ]
+  },
+  {
+    "name": "Arbatra",
+    "race": "Orc",
+    "class": "Warrior",
+    "level": 10,
+    "experience": 0,
+    "locations": [
+      {
+        "zone": "Durotar",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "zone": "Orgrimmar",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "zone": "The Barrens",
+        "x": 1,
+        "y": 1
+      }
+    ]
+  },
+  {
+    "name": "Chlobatra",
+    "race": "Orc",
+    "class": "Shaman",
+    "level": 10,
+    "experience": 0,
+    "locations": [
+      {
+        "zone": "Durotar",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "zone": "Orgrimmar",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "zone": "The Barrens",
+        "x": 1,
+        "y": 1
+      }
+    ]
+  }
+]

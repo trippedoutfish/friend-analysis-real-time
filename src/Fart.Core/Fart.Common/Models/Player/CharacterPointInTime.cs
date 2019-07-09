@@ -1,7 +1,6 @@
 ﻿using Fart.Common.Models.World;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Fart.Common.Models.Player
 {
